@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}my portfolio{% endblock %}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <nav>
+            <a href="/">home</a> |
+            <a href="/ ">about</a> |
+            <a href="/ projects">projects</a>
+            <a href="/ contact">Contact</a>
+            <a href="/ location">location</a>
+        </nav>
+        <div class="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>
