@@ -28,5 +28,9 @@ def contact():
         message_sent=True
     return render_template("contact.html", message_sent=message_sent)
 
+@app.route('/Our_Branch')
+def Our_Branch():
+    return render_template("Our_Branch.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
